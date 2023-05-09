@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title> DevWallet </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logotipo">
+        <img src="./img/Wallet.svg" alt="" />
+        <h1><span>Dev</span>wallet</h1>
+      </div>
+
+      <nav>
+        <i data-feather="search"></i>
+
+        <a href="">
+          <img src="./img/ProfileFt.png" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main>
+        <section class="groupcard">
+            <div id="card">
+                <div>
+                    <span>
+                        Total em caixa
+                    </span>
+
+                    <i data-feather="eye"></i>
+                </div>
+                <h1> R$ 9.600,00 </h1>
+            </div>
+           
+            <div id="card">
+                <div>
+                    <span>
+                        Entradas
+                    </span>
+
+                    <img src="/img/entrada.png" alt="">
+                </div>
+                <h1> R$ 12.000,00 </h1>
+            </div>
+           
+            <div id="card">
+                <div>
+                    <span>
+                        Saídas
+                    </span>
+
+                    <img src="/img/saida.png" alt="">
+                </div>
+                <h1> R$ 2.400,00 </h1>
+            </div>
+           
+        </section>
+
+        <aside>
+            <section class="historico-gruop">
+                <div class="info-grupo">
+                    <h2>Transações Recentes</h2>
+
+                    <span>Exibir todos</span>
+                </div>
+
+                <div class="historico">
+                    <div id="card-historico">
+                        <img src="./img/dinheiro.svg" alt="">
+                        <div>
+                            <h1>Salário de Programdor</h1>
+                            <span> R$ 6.000,00 </span>
+                        </div>
+                    </div>
+                    <div id="card-historico">
+                        <img src="./img/food.svg" alt="">
+                        <div>
+                            <h1> Ifood</h1>
+                            <span> R$ 60,00 </span>
+                        </div>
+                    </div>
+                    <div id="card-historico">
+                        <img src="./img/food.svg" alt="">
+                        <div>
+                            <h1> Ifood</h1>
+                            <span> R$ 30,00 </span>
+                        </div>
+                    </div>
+                    <div id="card-historico">
+                        <img src="./img/food.svg" alt="">
+                        <div>
+                            <h1> Ifood</h1>
+                            <span> R$ 92,00 </span>
+                        </div>
+                    </div>
+                    <div id="card-historico">
+                        <img src="./img/food.svg" alt="">
+                        <div>
+                            <h1> Ifood</h1>
+                            <span> R$ 65,00 </span>
+                        </div>
+                    </div>
+                    <div id="card-historico">
+                        <img src="./img/dinheiro.svg" alt="">
+                        <div>
+                            <h1>Salário de Programdor</h1>
+                            <span> R$ 1.000,00 </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="conversores">
+                <div class="info-grupo">
+                    <h2>Cotações</h2>
+
+                    <span>Exibir todos</span>
+                </div>
+
+            
+            </section>
+        </aside>
+    </main>
+  </body>
+  <script src="functions.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</html>

@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --white: #e2e8f0;
+  --bg-color: #0f172a;
+
+  --color-logo: #93c5fd;
+  --bg-color-card: #1e293b;
+}
+
+body {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+
+  max-width: 82.8rem;
+  width: 95%;
+  
+
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+}
+
+.logotipo {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.logotipo h1 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.logotipo h1 span {
+  color: var(--color-logo);
+}
+
+nav {
+  display: flex;
+  gap: 1.08rem;
+  align-items: center;
+}
+
+nav a img {
+  border-radius: 50%;
+}
+/* MAIN */
+
+.groupcard {
+  display: flex;
+  gap: 3.06rem;
+  margin-top: 2.68rem;
+  justify-content: space-between;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--bg-color-card);
+  width: 25rem;
+  padding: 1.25rem 1.56rem;
+  height: 9.06rem;
+  border-radius: 1.25rem;
+}
+
+#card div {
+  display: flex;
+  justify-content: space-between;
+  gap: 13.6rem;
+  font-size: 1rem;
+}
+
+#card h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+aside {
+  display: flex;
+  gap: 3.31rem;
+
+  margin-top: 2.3rem;
+}
+
+.historico-gruop {
+  display: flex;
+  flex-direction: column;
+  gap: 1.37rem;
+  max-width: 53.6rem;
+  width: 100%;
+}
+
+.info-grupo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-grupo h2 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.info-grupo span {
+  font-size: 0.75rem;
+  color: var(--color-logo);
+}
+
+.historico {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+#card-historico {
+    display: flex;
+    gap: 1.56rem;
+    background-color: var(--bg-color-card);
+    border-radius: 0.62rem;
+
+}
+
+#card-historico div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.conversores {
+    max-width: 24.81rem;
+    width: 100%;
+}
+
