@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <title> DevWallet </title>
+    <title>DevWallet</title>
   </head>
 
   <body>
@@ -32,180 +32,143 @@
         </a>
       </nav>
     </header>
-     
+
+    <section id="sumario">
+      <div class="card">
+        <div>
+          <span> Total em caixa </span>
+
+          <i data-feather="eye"></i>
+        </div>
+        <h1>R$ 9.600,00</h1>
+      </div>
+
+      <div class="card">
+        <div id="in">
+          <span> Entradas </span>
+
+          <i data-feather="arrow-up-circle"></i>
+        </div>
+        <h1>R$ 12.000,00</h1>
+      </div>
+
+      <div class="card">
+        <div id="out">
+          <span> Saídas </span>
+
+          <i data-feather="arrow-down-circle"></i>
+        </div>
+        <h1>R$ 2.400,00</h1>
+      </div>
+    </section>
+
     <main>
-        <section id="sumario">
-            <div class="card">
-                <div>
-                    <span>
-                        Total em caixa
-                    </span>
+      <section id="left">
+        <div class="title">
+          <h2>Transações Recentes</h2>
 
-                    <i data-feather="eye"></i>
-                </div>
-                <h1> R$ 9.600,00 </h1>
+          <a href="#">Exibir todas</a>
+        </div>
+
+        <div class="transações">
+          <div id="transação">
+            <div class="incoming">
+                <i data-feather="dollar-sign"></i>
             </div>
-           
-            <div class="card">
-                <div>
-                    <span>
-                        Entradas
-                    </span>
+            <h3>Salário de Programdor</h3>
+            <span> R$ 6.000,00 </span>
+          </div>
 
-                    <img src="/img/entrada.png" alt="">
-                </div>
-                <h1> R$ 12.000,00 </h1>
+          <div id="transação">
+            <div class="outgoing">
+                <i data-feather="coffee"></i>
             </div>
-           
-            <div class="card">
-                <div>
-                    <span>
-                        Saídas
-                    </span>
+            <h3>Salário de Programdor</h3>
+            <span> R$ 6.000,00 </span>
+          </div>
+        </div>
+      </section>
 
-                    <img src="/img/saida.png" alt="">
-                </div>
-                <h1> R$ 2.400,00 </h1>
+      <section class="right">
+        <div class="title">
+          <h2>Cotações</h2>
+
+          <a href="#">Exibir todas</a>
+        </div>
+
+        <div class="historico-cotação">
+          <div id="cotação">
+            <img src="./img/Eua.svg" alt="" />
+            <div id="info-cotação">
+              <div class="type-cotação">
+                <h2>Dolar americano</h2>
+                <span> USD </span>
+              </div>
+              <div id="valor-cotação">
+                <h2>$1.901,22</h2>
+                <span>
+                  <i data-feather="arrow-down"></i>
+                  -5,05%
+                </span>
+              </div>
             </div>
-           
-        </section>
+          </div>
 
-        <aside>
-            <section id="historicos">
-                <div class="info">
-                    <h2>Transações Recentes</h2>
+          <div id="cotação">
+            <img src="./img/Eua.svg" alt="" />
+            <div id="info-cotação">
+              <div class="type-cotação">
+                <h2>Dolar americano</h2>
+                <span> USD </span>
+              </div>
+              <div id="valor-cotação">
+                <h2>$1.901,22</h2>
+                <span>
+                  <i data-feather="arrow-down"></i>
+                  -5,05%
+                </span>
+              </div>
+            </div>
+          </div>
 
-                    <span>Exibir todos</span>
-                </div>
-
-                <div class="sumario-historico">
-                    <div id="card-historico">
-                        <img src="./img/dinheiro.svg" alt="">
-                        <div>
-                            <h3>Salário de Programdor</h3>
-                            <span> R$ 6.000,00 </span>
-                        </div>
-                    </div>
-                    <div id="card-historico">
-                        <img src="./img/food.svg" alt="">
-                        <div>
-                            <h3> Ifood</h3>
-                            <span> R$ 60,00 </span>
-                        </div>
-                    </div>
-                    <div id="card-historico">
-                        <img src="./img/food.svg" alt="">
-                        <div>
-                            <h3> Ifood</h3>
-                            <span> R$ 30,00 </span>
-                        </div>
-                    </div>
-                    <div id="card-historico">
-                        <img src="./img/food.svg" alt="">
-                        <div>
-                            <h1> Ifood</h1>
-                            <span> R$ 92,00 </span>
-                        </div>
-                    </div>
-                    <div id="card-historico">
-                        <img src="./img/food.svg" alt="">
-                        <div>
-                            <h1> Ifood</h1>
-                            <span> R$ 65,00 </span>
-                        </div>
-                    </div>
-                    <div id="card-historico">
-                        <img src="./img/dinheiro.svg" alt="">
-                        <div>
-                            <h1>Salário de Programdor</h1>
-                            <span> R$ 1.000,00 </span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section class="conversores">
-                <div class="info">
-                    <h2>Cotações</h2>
-
-                    <span>Exibir todos</span>
-                </div>
-
-                <div class="historico-cotação">
-                    <div id="cotação">
-                        <img src="./img/Eua.svg" alt="">
-                        <div id="info-cotação">
-                            <div class="type-cotação">
-                                <h2>Dolar americano</h2>
-                                <span> USD </span>
-                            </div>
-                            <div id="valor-cotação">
-                                <h2> $1.901,22 </h2>
-                                <span>
-                                    <i data-feather="arrow-down"></i> 
-                                    -5,05%
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="cotação">
-                        <img src="./img/Eua.svg" alt="">
-                        <div id="info-cotação">
-                            <div class="type-cotação">
-                                <h2>Dolar americano</h2>
-                                <span> USD </span>
-                            </div>
-                            <div id="valor-cotação">
-                                <h2> $1.901,22 </h2>
-                                <span>
-                                    <i data-feather="arrow-down"></i> 
-                                    -5,05%
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="cotação">
-                        <img src="./img/Eua.svg" alt="">
-                        <div id="info-cotação">
-                            <div class="type-cotação">
-                                <h2>Dolar americano</h2>
-                                <span> USD </span>
-                            </div>
-                            <div id="valor-cotação">
-                                <h2> $1.901,22 </h2>
-                                <span>
-                                    <i data-feather="arrow-down"></i> 
-                                    -5,05%
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="cotação">
-                        <img src="./img/Eua.svg" alt="">
-                        <div id="info-cotação">
-                            <div class="type-cotação">
-                                <h2>Dolar americano</h2>
-                                <span> USD </span>
-                            </div>
-                            <div id="valor-cotação">
-                                <h2> $1.901,22 </h2>
-                                <span>
-                                    <i data-feather="arrow-down"></i> 
-                                    -5,05%
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </aside>
+          <div id="cotação">
+            <img src="./img/Eua.svg" alt="" />
+            <div id="info-cotação">
+              <div class="type-cotação">
+                <h2>Dolar americano</h2>
+                <span> USD </span>
+              </div>
+              <div id="valor-cotação">
+                <h2>$1.901,22</h2>
+                <span>
+                  <i data-feather="arrow-down"></i>
+                  -5,05%
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="cotação">
+            <img src="./img/Eua.svg" alt="" />
+            <div id="info-cotação">
+              <div class="type-cotação">
+                <h2>Dolar americano</h2>
+                <span> USD </span>
+              </div>
+              <div id="valor-cotação">
+                <h2>$1.901,22</h2>
+                <span>
+                  <i data-feather="arrow-down"></i>
+                  -5,05%
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="functions.js"></script>
   <script>
-    feather.replace()
+    feather.replace();
   </script>
 </html>

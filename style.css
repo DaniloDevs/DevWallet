@@ -20,6 +20,12 @@
   --bg-color-card: #1e293b;
   --bg-color-card-200: #253247;
 
+  --green-500: #22c55e;
+  --green-500-030: #22c55e55;
+
+  --red-500: #f00;
+  --red-500-o30: #ff000052;
+
   --red: #dc2626;
   --zinc: #a1a1aa;
   /* --green: ; */
@@ -100,63 +106,98 @@ nav a img {
   font-weight: 600;
 }
 
-aside {
-  display: flex;
-  gap: 3.31rem;
+#in svg {
+  color: var(--green-500);
+  background-color: var(--green-500-030);
+  border-radius: 50%;
+}
 
+#out svg {
+  color: var(--red-500);
+  background-color: var(--red-500-o30);
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 3.31rem;
   margin-top: 2.3rem;
 }
 
-#historicos {
+#left {
   display: flex;
   flex-direction: column;
   gap: 1.37rem;
-  max-width: 53.6rem;
-  width: 100%;
+  flex: 1;
 }
 
-.info {
+.title {
   display: flex;
   justify-content: space-between;
 }
 
-.info h2 {
+.title h2 {
   font-size: 1rem;
   color: #fff;
   font-weight: bold;
 }
 
-.info span {
+.title span {
   font-size: 0.75rem;
   color: var(--color-logo);
 }
 
-.sumario-historico {
+.transações {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
 }
 
-#card-historico {
+#transação {
   display: flex;
-  gap: 1.56rem;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding-right: 37px;
+
   background-color: var(--bg-color-card);
   border-radius: 0.62rem;
 }
 
-#card-historico div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 85%;
+#transação h3 {
+  flex: 1;
 }
 
-.conversores {
+#transação div{
+ display: flex;
+ align-items: center;
+  padding: 15px;
+  border-radius: 0.62rem;
+}
+#transação span{
+  opacity: 30%;
+}
+
+.incoming{
+  background-color: var(--green-500-030);
+  color: var(--green-500);
+}
+
+.outgoing{
+  background-color:var(--red-500-o30);
+  color:  var(--red-500);
+}
+
+
+.right {
   display: flex;
   flex-direction: column;
   gap: 1.37rem;
-  max-width: 24.81rem;
-  width: 100%;
+  width: calc(82.8rem - (82.8rem * 0.7));
 }
 
 .historico-cotação {
@@ -199,8 +240,6 @@ aside {
   align-items: center;
 }
 
-
-
 /* Scrool */
 
 ::-webkit-scrollbar {
@@ -208,7 +247,7 @@ aside {
 }
 
 ::-webkit-scrollbar-track {
-  background: none /* Cor de fundo da área do scroll */
+  background: none; /* Cor de fundo da área do scroll */
 }
 
 ::-webkit-scrollbar-thumb {
